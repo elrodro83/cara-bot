@@ -7,7 +7,7 @@ body {
   padding: 0 0px;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background-image: linear-gradient(to bottom right, #5a00a9, #216100);
+  background-image: linear-gradient(to bottom right, #1b0029, #5a00a9);
 }
 
 iframe {
@@ -21,6 +21,22 @@ iframe {
   height: 100%;
   overflow: hidden;
   margin-right: 30em;
+}
+
+.camera-joystick {
+    position: absolute;
+    height: 120em;
+    width: 120em;
+    top: 12em;
+    right: -62em;
+    z-index: 20;
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.5);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
 }
 
 .dice-cam {

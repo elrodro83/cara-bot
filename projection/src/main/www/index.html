@@ -1,14 +1,21 @@
 <!Doctype html>
 <html lang="en">
 	<head>
+		<script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
 		<title>CaraBot - Projection</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
-		<div class="user-cam">
-			<iframe id="frame" src="https://discord.com/channels/749435751846117444/749435753213329490" frameborder="0"></iframe>
+		<div class="video-feed">
+			<iframe id="video-feed-iframe" title="Video Feed"></iframe>
 		</div>
-		<div class="dice-cam"></div>
+		<div class="dice-cam">
+			<image src="images/dice_rolled.jpeg" class="dice-cam-img"/>
+		</div>
 	</body>
+	<script type='text/javascript'>
+		document.getElementById('video-feed-iframe').src = 'file:///home/rodrigo/git/cara-bot/server/src/main/www/video_feed.html#' + location.hash
+	</script>
 </html>
