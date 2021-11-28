@@ -79,7 +79,7 @@ def on_open(ws):
 
 if __name__ == "__main__":
 #    websocket.enableTrace(True)
-    ws = websocket.WebSocketApp("ws://192.168.66.137:8000/",
+    ws = websocket.WebSocketApp("ws://cara-bot.herokuapp.com:8000/",
 #    ws = websocket.WebSocketApp("ws://echo.websocket.org/",
                               on_open=on_open,
                               on_message=on_message,
