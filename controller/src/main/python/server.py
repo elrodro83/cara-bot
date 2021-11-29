@@ -1,5 +1,5 @@
+import os
 from simple_websocket_server import WebSocketServer, WebSocket
-
 
 class SimpleChat(WebSocket):
     def handle(self):
@@ -23,5 +23,5 @@ class SimpleChat(WebSocket):
 
 clients = []
 
-server = WebSocketServer('', 8000, SimpleChat)
+server = WebSocketServer('', os.environ.get('PORT', '8000'), SimpleChat)
 server.serve_forever()
