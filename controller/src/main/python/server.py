@@ -23,5 +23,5 @@ class SimpleChat(WebSocket):
 
 clients = []
 
-server = WebSocketServer('', os.environ.get('PORT', '8000'), SimpleChat)
+server = WebSocketServer('0.0.0.0', os.environ.get('PORT', '8000'), SimpleChat)
 server.serve_forever()

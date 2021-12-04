@@ -19,7 +19,7 @@ font-size: xx-large;">
     </p>
     <canvas id="canvas" name="game"></canvas>
     <script>
-        var connection = new WebSocket('ws://' + "cara-bot.herokuapp.com" + ':8000/');
+        var connection = new WebSocket('wss://' + "cara-bot.herokuapp.com" + '/0.0.0.0');
         connection.onopen = function () {
             connection.send('Connect ' + new Date());
         };
